@@ -131,18 +131,19 @@ class res_company(osv.osv):
         ordenes_obj  = self.pool.get('mercadolibre.orders')
         multipos_obj = self.pool.get('multi.posting')
         delivery_obj = self.pool.get('delivery.carrier')
-        orders_ids = ordenes_obj.search(cr, 1 , [('sale_order','=',False),('status','=','paid')], context=context, limit=100)
+        orders_ids = ordenes_obj.search(cr, uid , [('sale_order','=',False),('status','=','paid')], context=context, limit=100)
         cantidad=len(orders_ids)
         count=0
+        wizard = self.browse(cr, uid, ids[0], context=context)
         for reco in orders_ids:
             count+=1
             mlm_order =ordenes_obj.browse(cr, uid, reco, context=context)
             buyer=mlm_order.buyer.id
             buyer_id =buyer_obj.browse(cr, uid, buyer, context=context)
-            partner=partner_obj.search(cr, 1 , [('ref','=',buyer_id.buyer_id)], context=context)
+            partner=partner_obj.search(cr,uid, [('ref','=',buyer_id.buyer_id)], context=context)
             cant=True
             for reco_item in mlm_order.order_items:
-                product_id=multipos_obj.search(cr, 1 , [('meli_id','=',reco_item.order_item_id),('product_id','!=',False)], context=context)
+                product_id=multipos_obj.search(cr,uid, [('meli_id','=',reco_item.order_item_id),('product_id','!=',False)], context=context)
                 if product_id: 
                     _logger.info("Productos if: %s " % (reco_item.order_item_id))
                 else:
@@ -164,7 +165,7 @@ class res_company(osv.osv):
                     partner_id=partner[0]
                 delivery_id=False    
                 if mlm_order.shipment_name: 
-                    delivery_ids = delivery_obj.search(cr, 1 , [('name','=',mlm_order.shipment_name)], context=context)
+                    delivery_ids = delivery_obj.search(cr,uid, [('name','=',mlm_order.shipment_name)], context=context)
                     if delivery_ids:
                         delivery_id=delivery_ids[0] 
 
@@ -172,21 +173,22 @@ class res_company(osv.osv):
                     'partner_id':partner_id,
                     'warehouse_id':company.stock_id.id,
                     'client_order_ref':mlm_order.order_id,
-                    'tienda_idmlm':'Tiendas Oficiales',
+                    'tienda_idmlm':'mlm',
                     'orden_id_mlm':mlm_order.id,
-                    'name':'TOML'+'-'+mlm_order.order_id,
+                    #'name':'TOML'+'-'+mlm_order.order_id,
                     'address_mlm':mlm_order.note,
                     'carrier_id':delivery_id,
+                    'company_id':wizard.id
                 }
                 order_id=saleorder_obj.create(cr, uid,values_order)
                 ordenes_obj.write(cr,uid,mlm_order.id,{'sale_order':order_id}, context=context)
                 _logger.info("Generando Ordenes Cantidad: %s " % (cantidad))
                 _logger.info("Generando en proceso: %s " % (count))
                 for reco_item in mlm_order.order_items:
-                    product_id=multipos_obj.search(cr, 1 , [('meli_id','=',reco_item.order_item_id)], context=context)
+                    product_id=multipos_obj.search(cr,uid , [('meli_id','=',reco_item.order_item_id)], context=context)
                     idposting= self.pool.get('multi.posting').browse(cr, uid,product_id[0], context=context)
                     template_id=idposting.product_id.id
-                    idproduct=product_obj.search(cr, 1 , [('product_tmpl_id','=',template_id)], context=context)
+                    idproduct=product_obj.search(cr,uid, [('product_tmpl_id','=',template_id)], context=context)
                     id_product=idproduct[0]
                     
                     val_order_line={
@@ -196,7 +198,7 @@ class res_company(osv.osv):
                         'price_unit':float(reco_item.unit_price)/1.16,
                     }
                     lines_order=saleline_obj.create(cr, uid,val_order_line)
-                saleorder_obj.action_button_confirm(cr, uid, [order_id], context=context)
+                #saleorder_obj.action_button_confirm(cr, uid, [order_id], context=context)
         return True
 
     def _get_pro_toml(self, cr, user_id, context=None):
