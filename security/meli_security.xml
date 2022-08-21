@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <record model="ir.module.category" id="base.module_category_meli_management">
+            <field name="name">Mercado Libre</field>
+            <field name="sequence">24</field>
+        </record>
+        <record id="base.group_meli_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="base.module_category_meli_management"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="base.group_meli_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="base.module_category_meli_management"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_meli_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record> 
+    </data>    
+</openerp>
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+        <record model="res.users" id="base.user_root">
+            <field eval="[(4,ref('base.group_meli_manager'))]" name="groups_id"/>
+        </record>
+    </data>
+</openerp> -->

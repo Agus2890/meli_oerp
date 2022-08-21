@@ -1,0 +1,946 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* meli_oerp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-27 21:05+0000\n"
+"PO-Revision-Date: 2015-09-02 13:16-0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_access_token:0
+msgid "Access Token"
+msgstr "Access Token"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Activate Product in MLA"
+msgstr "Activar producto en MLA"
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,answer_status:0
+msgid "Active"
+msgstr "Active"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Upgrade product in MLA"
+msgstr "Actualizar producto en MLA"
+
+#. module: meli_oerp
+#: selection:mercadolibre.product.post,type:0
+msgid "Registered"
+msgstr "Alta"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,alternative_phone:0
+msgid "Alternative Phone"
+msgstr "Teléfono Alternativo"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,answer_status:0
+msgid "Answer Status"
+msgstr "Estado Respuesta"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,answer_text:0
+msgid "Answer Text"
+msgstr "Texto Respuesta"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,answer_date_created:0
+msgid "Answer date"
+msgstr "Fecha respuesta"
+
+#. module: meli_oerp
+#: field:product.product,meli_description_banner_id:0
+msgid "Banner"
+msgstr "Descripcion"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_banners_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_banners
+#: view:mercadolibre.banner:meli_oerp.view_meli_banner_from
+#: view:mercadolibre.banner:meli_oerp.view_meli_banner_tree
+msgid "Banners"
+msgstr "Descripcion"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_banner
+msgid "Banners for MercadoLibre descriptions"
+msgstr "Descripciones de producto para MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,billing_info:0
+msgid "Billing Info"
+msgstr "Información de facturación"
+
+#. module: meli_oerp
+#: selection:mercadolibre.product.post,type:0
+msgid "Delete"
+msgstr "Borrado"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Bronze"
+msgstr "Bronce"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,buyer:0
+msgid "Buyer"
+msgstr "Comprador"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,buyer_id:0
+msgid "Buyer Id"
+msgstr "Id Comprador"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_buyers
+msgid "Buyers in MercadoLibre"
+msgstr "Compradores en MercadoLibre"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_buyers_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_buyers
+#: view:mercadolibre.buyers:meli_oerp.view_meli_buyers_form
+#: view:mercadolibre.buyers:meli_oerp.view_meli_buyers_tree
+msgid "Buyers"
+msgstr "Compradores"
+
+#. module: meli_oerp
+#: view:mercadolibre.orders.update:meli_oerp.view_orders_update
+#: view:mercadolibre.posting.update:meli_oerp.view_posting_update
+#: view:mercadolibre.product.post:meli_oerp.view_product_post
+msgid "Cancel"
+msgstr "Cancelado"
+
+#. module: meli_oerp
+#: selection:mercadolibre.orders,status:0
+msgid "Cancel"
+msgstr "Cancelado"
+
+#. module: meli_oerp
+#: field:product.product,meli_available_quantity:0
+msgid "Quantity available"
+msgstr "Cantidad disponible"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Load from MLA"
+msgstr "Cargar desde MLA"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_categories_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_categories
+#: view:mercadolibre.category:meli_oerp.view_meli_category_tree
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_category
+msgid "Categories of MercadoLibre"
+msgstr "Categorías de MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.category,meli_category_id:0
+msgid "Category Id"
+msgstr "Id Categoría"
+
+#. module: meli_oerp
+#: field:product.product,meli_category:0
+msgid "Category of MercadoLibre"
+msgstr "Categoría de MercadoLibre"
+
+#. module: meli_oerp
+#: view:res.company:meli_oerp.view_company_page_mercadolibreb
+msgid "Logout with MLA"
+msgstr "Cerrar sesión con MLA"
+
+#. module: meli_oerp
+#: selection:product.product,meli_buying_mode:0
+msgid "Classified"
+msgstr "Clasificado"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_client_id:0
+msgid "Client ID to enter MercadoLibre"
+msgstr "ID Client para ingresar a MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,date_closed:0
+msgid "Closing date"
+msgstr "Fecha cierre"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: meli_oerp
+#: selection:product.product,meli_buying_mode:0
+msgid "Buy Now"
+msgstr "Compre ahora"
+
+#. module: meli_oerp
+#: field:product.product,meli_condition:0
+msgid "Product Condition"
+msgstr "Condición del producto"
+
+#. module: meli_oerp
+#: selection:mercadolibre.orders,status:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,create_uid:0
+#: field:mercadolibre.buyers,create_uid:0
+#: field:mercadolibre.category,create_uid:0
+#: field:mercadolibre.order_items,create_uid:0
+#: field:mercadolibre.orders,create_uid:0
+#: field:mercadolibre.orders.update,create_uid:0
+#: field:mercadolibre.payments,create_uid:0
+#: field:mercadolibre.posting,create_uid:0
+#: field:mercadolibre.posting.update,create_uid:0
+#: field:mercadolibre.product.post,create_uid:0
+#: field:mercadolibre.questions,create_uid:0
+#: field:warning,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,create_date:0
+#: field:mercadolibre.buyers,create_date:0
+#: field:mercadolibre.category,create_date:0
+#: field:mercadolibre.order_items,create_date:0
+#: field:mercadolibre.orders,create_date:0
+#: field:mercadolibre.orders.update,create_date:0
+#: field:mercadolibre.payments,create_date:0
+#: field:mercadolibre.posting,create_date:0
+#: field:mercadolibre.posting.update,create_date:0
+#: field:mercadolibre.product.post,create_date:0
+#: field:mercadolibre.questions,create_date:0
+#: field:warning,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,date_created:0
+#: field:mercadolibre.payments,date_created:0
+#: field:mercadolibre.questions,date_created:0
+msgid "Creation date"
+msgstr "Fecha creación"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,currency_id:0
+#: field:mercadolibre.orders,currency_id:0
+#: field:mercadolibre.payments,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: meli_oerp
+#: field:product.product,meli_description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,answer_status:0
+msgid "Disabled"
+msgstr "Disabled"
+
+#. module: meli_oerp
+#: selection:mercadolibre.product.post,type:0
+msgid "Edited"
+msgstr "Editado"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Remove product of MLA"
+msgstr "Eliminar producto de MLA"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,email:0
+msgid "Email"
+msgstr "Email"
+
+#. module: meli_oerp
+#: selection:warning,type:0
+msgid "Error"
+msgstr "Error"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,meli_status:0
+#: field:product.product,meli_status:0
+msgid "State Product in MLA"
+msgstr "Estado del producto en MLA"
+
+#. module: meli_oerp
+#: field:product.product,meli_post_required:0
+msgid "This product is publishable in MercadoLibre"
+msgstr "Este producto es publicable en Mercado Libre"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,posting_date:0
+#: field:mercadolibre.product.post,posting_date:0
+msgid "Date posting"
+msgstr "Fecha publicación"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,first_name:0
+msgid "First Name"
+msgstr "Nombre"
+
+#. module: meli_oerp
+#: field:product.product,meli_warranty:0
+msgid "Warranty"
+msgstr "Garantía"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Free"
+msgstr "Libre"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,id:0
+#: field:mercadolibre.buyers,id:0
+#: field:mercadolibre.category,id:0
+#: field:mercadolibre.order_items,id:0
+#: field:mercadolibre.orders,id:0
+#: field:mercadolibre.orders.update,id:0
+#: field:mercadolibre.payments,id:0
+#: field:mercadolibre.posting,id:0
+#: field:mercadolibre.posting.update,id:0
+#: field:mercadolibre.product.post,id:0
+#: field:mercadolibre.questions,id:0
+#: field:warning,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,meli_id:0
+#: field:product.product,meli_id:0
+msgid "Id the item assigned by Meli"
+msgstr "Id del item asignado por Meli"
+
+#. module: meli_oerp
+#: field:product.product,meli_imagen_id:0
+msgid "Image Id"
+msgstr "Id Imagen"
+
+#. module: meli_oerp
+#: field:product.product,meli_imagen_link:0
+msgid "Image Link"
+msgstr "Link Imagen"
+
+#. module: meli_oerp
+#: field:product.product,meli_imagen_logo:0
+msgid "Image Logo"
+msgstr "Logo Imagen"
+
+#. module: meli_oerp
+#: selection:warning,type:0
+msgid "Information"
+msgstr "Información"
+
+#. module: meli_oerp
+#: view:res.company:meli_oerp.view_company_page_mercadolibreb
+msgid "Start search orders in MLA"
+msgstr "Iniciar búsqueda de órdenes en MLA"
+
+#. module: meli_oerp
+#: view:res.company:meli_oerp.view_company_page_mercadolibreb
+msgid "Start search posting in MLA"
+msgstr "Iniciar búsqueda de Publicaciones en MLA"
+
+#. module: meli_oerp
+#: view:res.company:meli_oerp.view_company_page_mercadolibreb
+msgid "Log in MLA"
+msgstr "Iniciar sesión en MLA"
+
+#. module: meli_oerp
+#: field:product.product,meli_state:0
+msgid "Login required"
+msgstr "Inicio de sesión requerida"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,order_item_category_id:0
+msgid "Item Category Id"
+msgstr "Id Item Categoría"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,item_id:0
+msgid "Item Id"
+msgstr "Id Item"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,order_item_id:0
+msgid "Item Id"
+msgstr "Id Item"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,order_item_title:0
+msgid "Item Title"
+msgstr "Título Item"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,last_name:0
+msgid "Last Name"
+msgstr "Apellido"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,write_uid:0
+#: field:mercadolibre.buyers,write_uid:0
+#: field:mercadolibre.category,write_uid:0
+#: field:mercadolibre.order_items,write_uid:0
+#: field:mercadolibre.orders,write_uid:0
+#: field:mercadolibre.orders.update,write_uid:0
+#: field:mercadolibre.payments,write_uid:0
+#: field:mercadolibre.posting,write_uid:0
+#: field:mercadolibre.posting.update,write_uid:0
+#: field:mercadolibre.product.post,write_uid:0
+#: field:mercadolibre.questions,write_uid:0
+#: field:warning,write_uid:0
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,write_date:0
+#: field:mercadolibre.buyers,write_date:0
+#: field:mercadolibre.category,write_date:0
+#: field:mercadolibre.order_items,write_date:0
+#: field:mercadolibre.orders,write_date:0
+#: field:mercadolibre.orders.update,write_date:0
+#: field:mercadolibre.payments,write_date:0
+#: field:mercadolibre.posting,write_date:0
+#: field:mercadolibre.posting.update,write_date:0
+#: field:mercadolibre.product.post,write_date:0
+#: field:mercadolibre.questions,write_date:0
+#: field:warning,write_date:0
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_product_post
+msgid "MELI Post"
+msgstr "Publicar MELI"
+
+#. module: meli_oerp
+#: code:addons/meli_oerp/product.py:227
+#: code:addons/meli_oerp/product.py:274
+#, python-format
+msgid "MELI WARNING"
+msgstr "MELI ADVERTENCIA"
+
+#. module: meli_oerp
+#: model:ir.ui.menu,name:meli_oerp.menu_meli
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+#: view:res.company:meli_oerp.view_company_page_mercadolibreb
+msgid "MercadoLibre"
+msgstr "MercadoLibre"
+
+#. module: meli_oerp
+#: field:warning,message:0
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: meli_oerp
+#: field:warning,message_html:0
+msgid "Message HTML"
+msgstr "Mensaje HTML"
+
+#. module: meli_oerp
+#: field:mercadolibre.payments,date_last_modified:0
+msgid "Modification date"
+msgstr "Fecha modificación"
+
+#. module: meli_oerp
+#: field:product.product,meli_currency:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: meli_oerp
+#: field:product.product,meli_multi_imagen_id:0
+msgid "Multi Image Ids"
+msgstr "Ids Multi Imagen"
+
+#. module: meli_oerp
+#: field:product.product,meli_buying_mode:0
+msgid "Purchase method"
+msgstr "Método de compra"
+
+#. module: meli_oerp
+#: field:mercadolibre.banner,name:0
+#: field:mercadolibre.category,name:0
+#: field:mercadolibre.posting,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,nickname:0
+msgid "Nickname"
+msgstr "Nickname"
+
+#. module: meli_oerp
+#: selection:product.product,meli_condition:0
+msgid "Not specified"
+msgstr "No especificado"
+
+#. module: meli_oerp
+#: code:addons/meli_oerp/product.py:227
+#: code:addons/meli_oerp/product.py:274
+#, python-format
+msgid "Could not load the image into MELI! Error: %s, Menssage: %s, Status: %s"
+msgstr "No se pudo cargar la imagen en MELI! Error: %s, Mensaje: %s, Estado: %s"
+
+#. module: meli_oerp
+#: field:product.product,meli_title:0
+msgid "Product name in MercadoLibre"
+msgstr "Nombre del producto en Mercado Libre"
+
+#. module: meli_oerp
+#: selection:product.product,meli_condition:0
+msgid "New"
+msgstr "Nuevo"
+
+#. module: meli_oerp
+#: view:mercadolibre.orders:meli_oerp.view_meli_orders_form
+msgid "Orders"
+msgstr "Pedidos"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,order_id:0
+#: field:mercadolibre.payments,order_id:0
+msgid "Order"
+msgstr "Pedido"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,order_id:0
+msgid "Order Id"
+msgstr "Id Pedido"
+
+#. module: meli_oerp
+#: view:mercadolibre.order_items:meli_oerp.view_meli_order_items_tree
+#: field:mercadolibre.orders,order_items:0
+msgid "Order Items"
+msgstr "Items Pedido"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,status:0
+msgid "Order Status"
+msgstr "Estado Pedido"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_orders_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_orders
+#: view:mercadolibre.orders:meli_oerp.view_meli_orders_tree
+msgid "Orders"
+msgstr "Pedidos"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_orders
+msgid "Orders in MercadoLibre"
+msgstr "Pedidos en MercadoLibre"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Gold"
+msgstr "Oro"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Gold Premium"
+msgstr "Oro Premium"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Gold Premium MSI"
+msgstr "Oro Premium MSI"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Gold Special"
+msgstr "Oro Especial"
+
+#. module: meli_oerp
+#: view:mercadolibre.product.post:meli_oerp.view_product_post
+msgid "PO Merge"
+msgstr "PO Merge"
+
+#. module: meli_oerp
+#: selection:mercadolibre.orders,status:0
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: meli_oerp
+#: selection:mercadolibre.orders,status:0
+msgid "Payment in progress"
+msgstr "Pago en proceso"
+
+#. module: meli_oerp
+#: selection:mercadolibre.orders,status:0
+msgid "Payment Required"
+msgstr "Pago requerido"
+
+#. module: meli_oerp
+#: view:mercadolibre.orders:meli_oerp.view_meli_orders_form
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Pause product in MLA"
+msgstr "Pausar producto en MLA"
+
+#. module: meli_oerp
+#: field:mercadolibre.payments,payment_id:0
+msgid "Payment Id"
+msgstr "Id Pago"
+
+#. module: meli_oerp
+#: field:mercadolibre.payments,status:0
+msgid "Payment Status"
+msgstr "Estado de pago"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,payments:0
+#: view:mercadolibre.payments:meli_oerp.view_meli_payments_tree
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_payments
+msgid "Payments MercadoLibre"
+msgstr "Pagos en MercadoLibre"
+
+#. module: meli_oerp
+#: field:product.product,meli_permalink:0
+msgid "PermaLink in MercadoLibre"
+msgstr "PermaLink en MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,meli_permalink:0
+msgid "Permalink in MercadoLibre"
+msgstr "Permalink en MercadoLibre"
+
+#. module: meli_oerp
+#: selection:product.product,meli_currency:0
+msgid "Peso Mexicanos (MXN)"
+msgstr "Peso Mexicanos (MXN)"
+
+#. module: meli_oerp
+#: field:mercadolibre.buyers,phone:0
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: meli_oerp
+#: selection:product.product,meli_listing_type:0
+msgid "Silver"
+msgstr "Plata"
+
+#. module: meli_oerp
+#: view:mercadolibre.product.post:meli_oerp.view_product_post
+msgid "Post MELI"
+msgstr "Publicar MELI"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,posting_id:0
+#: field:mercadolibre.questions,posting_id:0
+msgid "Posting"
+msgstr "Publicación"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,posting_update:0
+msgid "Posting Update"
+msgstr "Actulizar Publicación"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_posting
+msgid "Posting in MercadoLibre"
+msgstr "Publicación en MercadoLibre"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_postings_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_postings
+#: view:mercadolibre.posting:meli_oerp.view_meli_posting_tree
+msgid "Postings"
+msgstr "Publicaciones"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,meli_price:0
+#: field:product.product,meli_price:0
+msgid "Sale price"
+msgstr "Precio de venta"
+
+#. module: meli_oerp
+#: view:mercadolibre.posting:meli_oerp.view_meli_posting_form
+msgid "Questions"
+msgstr "Preguntas"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_order_items
+msgid "Product order in MercadoLibre"
+msgstr "Producto pedido en MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.posting,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Post product in MLA"
+msgstr "Publicar producto en MLA"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,quantity:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,question_id:0
+msgid "Question Id"
+msgstr "Id Pregunta"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,status:0
+msgid "Question Status"
+msgstr "Estado Pregunta"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,text:0
+msgid "Question Text"
+msgstr "Texto Pregunta"
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,status:0
+msgid "Question is not answered yet."
+msgstr "Pregunta aún no se responde."
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,status:0
+msgid "Question was answered."
+msgstr "Pregunta fue respodida."
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_meli_questions_tree
+#: model:ir.ui.menu,name:meli_oerp.menu_meli_questions
+#: field:mercadolibre.posting,posting_questions:0
+#: view:mercadolibre.questions:meli_oerp.view_meli_questions_tree
+msgid "Questions"
+msgstr "Preguntas"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_questions
+msgid "Questions on MercadoLibre"
+msgstr "Preguntas en MercadoLibre"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_refresh_token:0
+msgid "Refresh Token"
+msgstr "Refresh Token"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_state:0
+msgid "Login is required with MLA"
+msgstr "Se requiere Iniciar Sesión con MLA"
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Login is required MLA"
+msgstr "Se requiere Iniciar Sesión en MLA"
+
+#. module: meli_oerp
+#: view:mercadolibre.buyers:meli_oerp.meli_buyers_search_view
+msgid "Search MercadoLibre Buyers Information"
+msgstr "Buscar MercadoLibre Información de Compradores"
+
+#. module: meli_oerp
+#: view:mercadolibre.orders:meli_oerp.meli_orders_search_view
+msgid "Search MercadoLibre Orders Information"
+msgstr "Buscar MercadoLibre Información de Pedidos"
+
+#. module: meli_oerp
+#: view:mercadolibre.posting:meli_oerp.meli_posting_search_view
+msgid "Search MercadoLibre Posting Information"
+msgstr "Buscar MercadoLibre Información de Publicación"
+
+#. module: meli_oerp
+#: view:mercadolibre.questions:meli_oerp.meli_questions_search_view
+msgid "Search MercadoLibre Questions Information"
+msgstr "Buscar MercadoLibre Información de Preguntas"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_secret_key:0
+msgid "Secret Key to enter MercadoLibre"
+msgstr "Secret Key para ingresar a MercadoLibre"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,seller:0
+msgid "Seller"
+msgstr "Vendedor"
+
+#. module: meli_oerp
+#: field:mercadolibre.questions,seller_id:0
+msgid "Seller Id"
+msgstr "Id Vendedor"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,shipping:0
+msgid "Shipping"
+msgstr "Envío"
+
+#. module: meli_oerp
+#: view:mercadolibre.buyers:meli_oerp.meli_buyers_search_view
+#: view:mercadolibre.orders:meli_oerp.meli_orders_search_view
+#: view:mercadolibre.posting:meli_oerp.meli_posting_search_view
+#: view:mercadolibre.questions:meli_oerp.meli_questions_search_view
+msgid "Status"
+msgstr "Estado"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,status_detail:0
+msgid "Status detail, in case the order was cancelled."
+msgstr "Detalle de estado, en caso que fue canceló el pedido."
+
+#. module: meli_oerp
+#: view:product.product:meli_oerp.product_nh_ml_form_view
+msgid "Upload image in MLA"
+msgstr "Subir imagen a MLA"
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,status:0
+msgid "The item is closed and the question was never answered."
+msgstr "El item está cerrado y la pregunta no fue respondida."
+
+#. module: meli_oerp
+#: selection:mercadolibre.questions,status:0
+msgid "The item is under review and the question too."
+msgstr "El item está bajo revisión y la pregunta también."
+
+#. module: meli_oerp
+#: field:product.product,meli_listing_type:0
+msgid "Type of list"
+msgstr "Tipo de lista"
+
+#. module: meli_oerp
+#: field:mercadolibre.product.post,type:0
+msgid "Type of transaction"
+msgstr "Tipo de operación"
+
+#. module: meli_oerp
+#: field:warning,title:0
+msgid "Title"
+msgstr "Título"
+
+#. module: meli_oerp
+#: field:mercadolibre.orders,total_amount:0
+msgid "Total amount"
+msgstr "Cantidad Total"
+
+#. module: meli_oerp
+#: field:mercadolibre.payments,transaction_amount:0
+msgid "Transaction Amount"
+msgstr "Cantidad de transacción"
+
+#. module: meli_oerp
+#: field:warning,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: meli_oerp
+#: field:mercadolibre.order_items,unit_price:0
+msgid "Unit price"
+msgstr "Precio unitario"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_update_meli_orders
+msgid "Update Meli Orders"
+msgstr "Actualizar Pedidos Meli"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_update_meli_postings
+msgid "Update Meli Posting"
+msgstr "Actulizar Publicación Meli"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_orders_update
+#: view:mercadolibre.orders.update:meli_oerp.view_orders_update
+msgid "Update Order"
+msgstr "Actualizar Pedidos"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_posting_update
+#: view:mercadolibre.posting.update:meli_oerp.view_posting_update
+msgid "Update Posting Questions"
+msgstr "Actulizar Publicación de Preguntas"
+
+#. module: meli_oerp
+#: view:mercadolibre.posting.update:meli_oerp.view_posting_update
+msgid "Update questions"
+msgstr "Actulizar cotizaciones"
+
+#. module: meli_oerp
+#: selection:product.product,meli_condition:0
+msgid "Used"
+msgstr "Usado"
+
+#. module: meli_oerp
+#: field:res.company,mercadolibre_seller_id:0
+msgid "Seller Id"
+msgstr "Id Vendedor"
+
+#. module: meli_oerp
+#: field:product.product,meli_video:0
+msgid "Video (id de youtube)"
+msgstr "Video (id de youtube)"
+
+#. module: meli_oerp
+#: model:ir.actions.act_window,name:meli_oerp.action_warning
+#: view:mercadolibre.orders:meli_oerp.view_meli_orders_form
+#: view:mercadolibre.posting:meli_oerp.view_meli_posting_form
+#: view:warning:meli_oerp.warning_form
+#: selection:warning,type:0
+msgid "Warning"
+msgstr "Advertencia"
+
+#. module: meli_oerp
+#: model:ir.model,name:meli_oerp.model_mercadolibre_product_post
+msgid "Wizard of Product Posting in MercadoLibre"
+msgstr "Wizard de Productos Publicados en MercadoLibre"
+
+#. module: meli_oerp
+#: model:ir.actions.act_url,name:meli_oerp.meli_login_action
+msgid "meli_login_action"
+msgstr "meli_login_action"
+
+#. module: meli_oerp
+#: view:mercadolibre.orders.update:meli_oerp.view_orders_update
+#: view:mercadolibre.posting.update:meli_oerp.view_posting_update
+#: view:mercadolibre.product.post:meli_oerp.view_product_post
+msgid "or"
+msgstr "o"
+

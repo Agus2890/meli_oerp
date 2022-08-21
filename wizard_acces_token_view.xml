@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<openerp>
+    <data>
+       <record id="view_acces_token_wizard" model="ir.ui.view">
+            <field name="name">generar_acces_token</field>
+            <field name="model">generare.acces</field>
+            <field name="arch" type="xml">
+                <form string="Generar acces token" version="7.0"> 
+                    <group string="Generar acces token">
+                        <field name="name" invisible="True"/>
+                        <field name="company_id" invisible="True"/>
+                        <field name="client_id"/>
+                        <field name="mercadolibre_secret_key"/>
+                        <field name="mercadolibre_code"/>
+                        <field name="redirect_url" widget="url" />
+                    </group>   
+                    <footer>
+                        <button name="action_generating_code" type="object" string="Obtener Code" class="oe_highlight"/>
+                        or
+                        <button name="action_generating_token" type="object" string="Actualizar Refres token" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record> 
+
+        <record id="act_generar_acces_token" model="ir.actions.act_window">
+            <field name="name">Generando acces token</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">generare.acces</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record> 
+       
+    </data>
+</openerp>

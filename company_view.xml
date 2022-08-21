@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.actions.act_url" id="meli_login_action">
+			<field name="name">meli_login_action</field>
+			<field name="url">/meli_login</field>
+			<field name="target">new</field>
+		</record>
+
+        <record model="ir.ui.view" id="view_company_page_mercadolibreb">
+            <field name="name">res.company.form.meli</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <notebook>
+                        <page string="MercadoLibre TOML">
+							<group string="Mercado Libre TOML">
+								<field name="mercadolibre_state" invisible="0"/>
+								<field name="mercadolibre_client_id" />
+								<field name="mercadolibre_secret_key" />
+								<field name="mercadolibre_access_token" invisible="0"/>
+								<field name="mercadolibre_refresh_token" invisible="0"/>
+								<field name="mercadolibre_code" invisible="0"/>
+                				<field name="mercadolibre_seller_id" invisible="0"/>
+                				<field name="tienda_oficial"/>
+                				<field name="official_store_id"/>
+							</group>
+							<group>
+								<group> 
+	                                <field name="stock_id" /> 
+	                                <field name="categ_product"/>                               
+									<button name='meli_login' type="object"
+											string="Log in MLM" attrs="{'invisible':[('mercadolibre_state','=',False)]}"/>
+									<button name='meli_logout' type="object"
+											string="Logout with MLM" attrs="{'invisible':[('mercadolibre_state','=',True)]}"/>
+	                                <button name='meli_query_orders' type="object"
+											string="Start search orders in MLM"/>
+											<br/>
+                  <field name="date_orders_toml"/>
+									<field name="num_order"/>
+									<button name='action_gene_orders_erp' type="object" string="Generar Ordenes en ERP"/>
+
+								</group>
+								<group>
+									<!-- <button string="Generar Acces Token" name="%(act_generar_acces_token)d" type="action" class="oe_inline" icon="STOCK_INDEX"/>
+									<br/>	 -->		
+									<field name="postin_activas"/>
+									<field name="postin_paused" />
+									<field name="postin_closed"/>
+
+								<button name='meli_query_posting' type="object"
+										string="Start search posting in MLM" attrs="{'invisible':[('mercadolibre_state','=',True)]}"/>
+										<br/>
+									<field name="num_posting" string="Publicaciones sin sku"/>
+								<button name='action_generating_products' type="object"
+										string="Generating Products"/>
+										<br/>
+								<button name='action_updates_products' type="object"
+										string="Actualizar Precios y Estados de MLM"/>
+               					<br/>
+               					<field name="date_questions_toml"/>
+								<button name='posting_query_questions_toml' type="object"
+										string="Descargar preguntas TOML"/>
+								
+								<br/>
+								<button name='action_asig_categ_toml' type="object"
+										string="Asignar Categoria"/>
+								<br/>
+								<button name='action_update_erp_variation_toml' type="object"
+										string="Actualizar tallas y colores (Proveedor)"/>
+
+								</group>
+							</group>
+             <group>
+                 <group string="ERP-->MercadoLibre">
+                     <field name="qty_pause"/>
+                     <field name="prov_toml"/>
+                     <button name='update_toml_qty' type="object" string="Actualizar Cantidades(STOCK) a MLM"/>
+                 </group>
+                 <group string="ERP-->MercadoLibre">
+                 </group>
+             </group>
+
+							<group string="ERP->MercadoLibre">
+                                                        
+								<!--<button name='update_warraty_toml' type="object" string="Actualizar Garantias a MLM"/>
+				                <br/>
+				                <br/>
+				                <button name='update_price_toml' type="object" string="Actualizar Precios a MLM"/>
+				                <br/>
+				                <br/>
+                        <field name="prov_toml"/>
+				                <button name='update_toml_qty' type="object" string="Actualizar stock a MLM"/>-->
+                        <button name='update_sku_toml' type="object" string="Actualizar sku a MLM"/>
+							</group>
+                        </page>
+                    </notebook>
+                </data>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

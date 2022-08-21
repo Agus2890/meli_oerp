@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	<record id="category_table_01" model="mercadolibre.category">
+            <field name="name">Accesorios para Vehículos</field>
+            <field name="meli_category_id">MLM1747</field>
+        </record>
+        <record id="category_table_02" model="mercadolibre.category">
+            <field name="name">Animales y Mascotas</field>
+            <field name="meli_category_id">MLM1071</field>
+        </record>
+        <record id="category_table_03" model="mercadolibre.category">
+            <field name="name">Arte y Antiguedades</field>
+            <field name="meli_category_id">MLM1367</field>
+        </record>
+        <record id="category_table_04" model="mercadolibre.category">
+            <field name="name">Autos, Motos y Otros</field>
+            <field name="meli_category_id">MLM1743</field>
+        </record>
+        <record id="category_table_05" model="mercadolibre.category">
+            <field name="name">Bebés</field>
+            <field name="meli_category_id">MLM1384</field>
+        </record>
+        <record id="category_table_06" model="mercadolibre.category">
+            <field name="name">Celulares y Telefonía</field>
+            <field name="meli_category_id">MLM1051</field>
+        </record>
+        <record id="category_table_07" model="mercadolibre.category">
+            <field name="name">Computación</field>
+            <field name="meli_category_id">MLM1648</field>
+        </record>
+        <record id="category_table_08" model="mercadolibre.category">
+            <field name="name">Consolas y Videojuegos</field>
+            <field name="meli_category_id">MLM1144</field>
+        </record>
+
+        <record id="category_table_09" model="mercadolibre.category">
+            <field name="name">Cámaras y Accesorios</field>
+            <field name="meli_category_id">MLM1039</field>
+        </record>
+
+        <record id="category_table_10" model="mercadolibre.category">
+            <field name="name">Deportes y Fitness</field>
+            <field name="meli_category_id">MLM1276</field>
+        </record>
+
+        <record id="category_table_11" model="mercadolibre.category">
+            <field name="name">Electrodomésticos</field>
+            <field name="meli_category_id">MLM1575</field>
+        </record>
+
+        <record id="category_table_12" model="mercadolibre.category">
+            <field name="name">Electrónica, Audio y Video</field>
+            <field name="meli_category_id">MLM1000</field>
+        </record>
+
+        <record id="category_table_13" model="mercadolibre.category">
+            <field name="name">Hogar, Muebles y Jardín</field>
+            <field name="meli_category_id">MLM1574</field>
+        </record>
+
+        <record id="category_table_14" model="mercadolibre.category">
+            <field name="name">Industrias y Oficinas</field>
+            <field name="meli_category_id">MLM1499</field>
+        </record>
+
+        <record id="category_table_15" model="mercadolibre.category">
+            <field name="name">Inmuebles</field>
+            <field name="meli_category_id">MLM1459</field>
+        </record>
+
+        <record id="category_table_16" model="mercadolibre.category">
+            <field name="name">Instrumentos Musicales</field>
+            <field name="meli_category_id">MLM1182</field>
+        </record>
+
+        <record id="category_table_17" model="mercadolibre.category">
+            <field name="name">Joyas y Relojes</field>
+            <field name="meli_category_id">MLM3937</field>
+        </record>
+
+        <record id="category_table_18" model="mercadolibre.category">
+            <field name="name">Juegos y Juguetes</field>
+            <field name="meli_category_id">MLM1132</field>
+        </record>
+
+        <record id="category_table_19" model="mercadolibre.category">
+            <field name="name">Libros, Revistas y Comics</field>
+            <field name="meli_category_id">MLM3025</field>
+        </record>
+
+        <record id="category_table_20" model="mercadolibre.category">
+            <field name="name">Música, Películas y Series</field>
+            <field name="meli_category_id">MLM1168</field>
+        </record>
+
+        <record id="category_table_21" model="mercadolibre.category">
+            <field name="name">Otras Categorías</field>
+            <field name="meli_category_id">MLM1953</field>
+        </record>
+
+        <record id="category_table_22" model="mercadolibre.category">
+            <field name="name">Ropa, Bolsas y Calzado</field>
+            <field name="meli_category_id">MLM1430</field>
+        </record>
+
+        <record id="category_table_23" model="mercadolibre.category">
+            <field name="name">Salud y Belleza</field>
+            <field name="meli_category_id">MLM1246</field>
+        </record>
+
+        <record id="category_table_24" model="mercadolibre.category">
+            <field name="name">Servicios</field>
+            <field name="meli_category_id">MLM1540</field>
+        </record>
+        <record id="category_table_25" model="mercadolibre.category">
+            <field name="name">Otros</field>
+            <field name="meli_category_id">MLM3530</field>
+        </record>
+
+    </data>
+</openerp>

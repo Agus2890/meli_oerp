@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record id="view_mercadolibre_shipping_Wip_wizard" model="ir.ui.view">
+            <field name="name">Mercadolibre Product</field>
+            <field name="model">product.multi.edit</field>
+            <field name="arch" type="xml">
+                <form string="Editing" version="8.0">
+                    <group string="Presione Confirmar">
+                        <field name="name" />
+                    </group>    
+                    <footer>
+                        <button name="actualizar_multiple" type="object" string="Confirmar" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record> 
+
+        <record id="act_mercadolibre_update" model="ir.actions.act_window">
+            <field name="name">Multi update</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.multi.edit</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="view_mercadolibre_asing_shipping_wizard" model="ir.ui.view">
+            <field name="name">Mercadolibre Product</field>
+            <field name="model">asig.shipping</field>
+            <field name="arch" type="xml">
+                <form string="Editing" version="8.0">
+                    <group string="Agregar forma de envio">
+                        <field name="name" readonly="1"/>
+                        <field name="toml_order_id" invisible="1"/>
+                        <field name="shipping_type" />
+                    </group>    
+                    <footer>
+                        <button name="act_confirm_shipping" type="object" string="Confirmar" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="act_mercadolibre_asig_shipping" model="ir.actions.act_window">
+            <field name="name">Agregar forma de envio</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">asig.shipping</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+</data>
+</openerp>

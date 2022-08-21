@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_meli_banner_from">
+            <field name="name">mercadolibre.banner.from</field>
+            <field name="model">mercadolibre.banner</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Banners" version="8.0">
+                    <group>
+                    <field name="name"/>
+                    <field name="description"/> 
+                    </group>                   
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_meli_banner_tree">
+            <field name="name">mercadolibre.banner.tree</field>
+            <field name="model">mercadolibre.banner</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Banners" >
+                    <field name="name"/>                    
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="action_meli_banners_tree">
+            <field name="name">Banners</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mercadolibre.banner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_meli_banners"
+            action="action_meli_banners_tree"
+            parent="menu_meli"
+            name="Banners" />
+
+        <record model="ir.ui.view" id="view_meli_oficial_store_from">
+            <field name="name">oficial.store.from</field>
+            <field name="model">official.store</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="store" version="8.0">
+                    <header>
+                        <button name='store_get_mlm' type="object" string="Actualizar Tiendas"/>
+                    </header>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="official_store_id"/>
+                        </group>
+                        <group>
+                            <field name="state"/>
+                        </group>
+                    </group>                   
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_meli_oficial_tree">
+            <field name="name">official.store.tree</field>
+            <field name="model">official.store</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="store" >
+                    <field name="name"/>
+                    <field name="official_store_id"/>
+                    <field name="state"/>                    
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="action_meli_store">
+            <field name="name">Oficial</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">official.store</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem  name="Tiendas MLM" id="menu_meli_store" action="action_meli_store" parent="menu_meli"/>
+
+
+    </data>
+</openerp>
