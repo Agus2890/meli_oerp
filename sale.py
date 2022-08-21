@@ -32,7 +32,7 @@ class sale_order(osv.Model):
 
     _columns = {
     	#'linio_order_id': fields.char('Linio Id'),
-        'tienda_idmlm':fields.selection([('Akizi','Akizi'),('Mercadazo','Mercadazo'),('Tiendas Oficiales','Tienda Oficial')],'Tienda'),
+        'tienda_idmlm':fields.selection([('mlm','MercadoLibre'),('Akizi','Akizi'),('Mercadazo','Mercadazo'),('Tiendas Oficiales','Tienda Oficial')],'Tienda'),
         #'linio_id': fields.char('Linio Id'),
         'orden_id_mlm':fields.many2one('mercadolibre.orders','Orden MercadoLibre'),
         'address_mlm':fields.char('Direccion',size=200),

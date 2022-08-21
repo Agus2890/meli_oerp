@@ -10,7 +10,7 @@
 {
     'name': 'Mercado Libre',
     'version': '0.1',
-    'author': 'Moldeo Interactive & Mikrointeracciones de México',
+    'author': 'Moldeo Interactive',
     'website': 'http://business.moldeo.coop',
     "category": "Sales",
     "depends": ['base', 'product','sale','mail'],

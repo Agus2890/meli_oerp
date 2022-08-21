@@ -181,7 +181,7 @@ class mercadolibre_orders(osv.osv):
                     'unit_price': Item['unit_price'],
                     'quantity': Item['quantity'],
                     'currency_id': Item['currency_id'],
-                    #'payment_type': Item["payment_type"] or '',
+                    'payment_type': Item["payment_type"] or '',
                 }
                 order_item_ids = order_items_obj.search(cr,uid,[('order_item_id','=',order_item_fields['order_item_id']),('order_id','=',order.id)] )
 
@@ -362,6 +362,12 @@ class mercadolibre_orders(osv.osv):
                 resu[r.id]=total_amount+cost_shipping
             return resu 
 
+    def _get_default_company(self, cr, uid, context=None):
+        company_id = self.pool.get('res.users')._get_company(cr, uid, context=context)
+        if not company_id:
+            raise orm.except_orm(('Error!'), ('There is no default company for the current user!'))
+        return company_id
+
     _columns = {
         'order_id': fields.char('Order Id'),
         'name':fields.related('order_id',type='char',relation='mercadolibre.orders',string='Name'),
@@ -410,8 +416,12 @@ class mercadolibre_orders(osv.osv):
             ('shipping_except', 'Excepcion de envio'),
             ('invoice_except', 'Excepcion de Factura'),
             ('done', 'Completado')],string='Estado Orden ERP'),
+        'company_id': fields.many2one('res.company', 'Company'),
     }
     _order = "date_created desc"
+    _defaults = {
+        'company_id': _get_default_company,
+    }
 
 mercadolibre_orders()
 

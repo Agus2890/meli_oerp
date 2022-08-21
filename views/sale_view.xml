@@ -16,7 +16,7 @@
                             </group>-->
                             <group  string="Informacion de Envio">
                                 <field name="tienda_idmlm" readonly="1"/> 
-                                <!--<field name="orden_id_mlm" readonly="1"/>-->
+                                <field name="orden_id_mlm" readonly="1"/>
                                 <field name="address_mlm" readonly="1"/>
 
                                 <field name="formaentrega"/>
@@ -82,8 +82,9 @@
             <field name="view_id" ref="view_mlm_sale_order_tree"/>
             <!-- <field name="search_view_id" ref="sale.view_sales_order_filter"/>
             <field name="search_view_id" ref="view_sales_order_filter_inherit111"/> -->
-            <field name="context">{'search_default_my_sale_orders_filter': 1}</field>
-            <field name="domain">[('state', 'not in', ('draft', 'sent', 'cancel')),('tienda_idmlm','=','Tiendas Oficiales')]</field>
+            <!-- <field name="context">{'search_default_my_sale_orders_filter': 1}</field> -->
+            <field name="domain">[('tienda_idmlm','=','mlm')]</field>
+            <!-- ('state', 'not in', ('draft', 'sent', 'cancel')) -->
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
                     Click to create a quotation that can be converted into a sales
@@ -95,7 +96,7 @@
             </field>
         </record>
         
-        <menuitem id="mlm_order_menu" name="Pedidos de Venta" parent="menu_meli" action="mlm_action_orders" sequence="9"/>
+        <menuitem id="mlm_order_menu" name="Pedidos de Venta MLM" parent="base.menu_sales" action="mlm_action_orders" sequence="9"/>
         <!--res partner-->
         <record model="ir.ui.view" id="inherit_code_res_partner_form_view">
             <field name="name">code.res.partner</field>
